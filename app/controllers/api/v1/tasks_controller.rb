@@ -1,6 +1,6 @@
-class TasksController < ApplicationController
+class Api::V1::TasksController < Api::V1::ApiController#Api::V1::ApiController
   # configurando quais métodos realizarão a chamada do metodo 'set_task'
-  before_action :set_task, only: [:update, :destroy]
+  before_action :set_task, only: [:show,:update, :destroy]
   def index
     
     @tasks = Task.all.order("created_at DESC")
@@ -23,6 +23,15 @@ class TasksController < ApplicationController
     else
       render json: { message: "Não foi possivel criar essa tarefa. Tente novamente mais tarde." }, status: 500
     end  
+  end
+
+  def show
+   
+    unless @task.nil?
+      render json:  @task 
+    else  
+      render json: { message: "Não foi possivel encontrar a tarefa desejada." }, status: 500
+    end
   end
 
   def update
