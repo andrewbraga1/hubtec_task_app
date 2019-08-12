@@ -14,6 +14,13 @@ gem 'rack-cors', :require => 'rack/cors'
 
 # Use for filter request
 gem 'rack-attack'
+# Use devise to set User model
+gem 'devise'
+# Use devise token auth for our api
+gem 'devise_token_auth'
+# Use for soft delete
+gem "paranoia", "~> 2.2"
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
