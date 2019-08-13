@@ -42,7 +42,7 @@ class Api::UsersController < ApplicationController
             render json: {message: "Usuário não foi atualizado! Verifique se todos os campos foram preenchidos corretamente."}, status: 400
           
         end
-      end
+      
     end
   
     # DELETE /users/1
