@@ -1,6 +1,9 @@
 # README
+This project was designed for tasks management by users. Plus, all tasks are private to their owner.
 
-This README would normally document whatever steps are necessary to get the
+Every request to back end, the service checks if credentials matches the task related to an user.
+
+This README some steps and configs which are necessary to get the
 application up and running.
 
 Things you may want to cover:
@@ -9,19 +12,11 @@ Things you may want to cover:
   ruby '2.5.1'
   rails '5.2.3'
 
-* System dependencies
 
-* Configuration
+* Initialize 
+clone this repo, then migrate in your own database.
+after that you can run  by command 'rails s';
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+*
 * ...
 # hubtec_task_app_api

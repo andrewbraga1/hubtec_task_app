@@ -73,6 +73,6 @@ class Api::V1::TasksController < Api::V1::ApiController
     end
     # definindo a lista branca dos parâmetros permitidos
     def task_param
-      params.require(:task).permit(:name, :description,:deadline)
+      params.require(:task).permit(:name, :description, :deadline)
     end
 end
